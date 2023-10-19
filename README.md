@@ -6,8 +6,8 @@ Stack: C# (Silverlight, .NET)
 
 Screens:
 
-![](_readme/images/gamepage.png )
+![](_readme/images/gamepage.png | width=220)
 
-![](_readme/images/ingame.png )
+![](_readme/images/ingame.png | width=220)
 
-![](_readme/images/ingame1.png )
+![](_readme/images/ingame1.png | width=220)
