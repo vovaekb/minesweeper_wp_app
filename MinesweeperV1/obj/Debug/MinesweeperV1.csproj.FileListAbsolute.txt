@@ -1,0 +1,19 @@
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\MinesweeperV1.dll
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\MinesweeperV1.pdb
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\AppManifest.xaml
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\MinesweeperV1.xap
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\obj\Debug\MinesweeperV1.g.resources
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\obj\Debug\MinesweeperV1.dll
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\obj\Debug\MinesweeperV1.pdb
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\obj\Debug\XapCacheFile.xml
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\icons\Windows Phone 7 Application Bar Icons.png
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\icons\appbar.task.complete.rest.png
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\Bin\Debug\icons\flag.png
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\obj\Debug\App.g.i.cs
+C:\Users\asus\Программирование\Мои приложения\Сапер\MinesweeperV1\MinesweeperV1\obj\Debug\MainPage.g.i.cs

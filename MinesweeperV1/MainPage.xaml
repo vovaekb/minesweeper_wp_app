@@ -1,0 +1,95 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="MinesweeperV1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696" 
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot Title="Сапер">
+            <!--Pivot item one-->
+            <controls:PivotItem Header="Игра">
+                <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+                    <Grid Height="430" HorizontalAlignment="Left" Margin="0,-3,0,0" Name="grid1" VerticalAlignment="Top" Width="407">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="8*" />
+                            <ColumnDefinition Width="399*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="87" />
+                            <RowDefinition Height="294*" />
+                        </Grid.RowDefinitions>
+                        <Button Content="Новая игра" Grid.Row="0" Grid.Column="1" Height="73" HorizontalAlignment="Left" Margin="215,0,0,0" Name="NewGameButton" Click="NewGameButton_Click" VerticalAlignment="Top" Width="189" />
+
+                        <ListBox Name="cellsListBox" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="1" Margin="-10,-10,0,-66" Width="460">
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <toolkit:WrapPanel x:Name="cellsWrapPanel" Orientation="Horizontal" Width="420" Margin="-30,0,0,0"/>
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Width="72" Height="72" Margin="-10">
+                                        <Button Name="cellButton" Click="cellButton_Click" Content="" BorderBrush="Blue" Background="Blue"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Grid>
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="29,499,0,0" Name="remainedMinesCountTxt" Text="TextBlock" VerticalAlignment="Top" Width="263" />
+                    <TextBlock Height="30" HorizontalAlignment="Left" Margin="267,499,0,0" Name="timeCountTxt" Text="" VerticalAlignment="Top" Width="175" />
+                </Grid>
+            </controls:PivotItem>
+ 
+            <!--Pivot item two-->
+            <controls:PivotItem Name="rulesPanel" Header="Правила" Loaded="rulesPanel_Loaded"> 
+                <ScrollViewer>
+                    <TextBlock Name="rulesTxt" TextWrapping="Wrap" Margin="20, 10"></TextBlock>
+                </ScrollViewer>
+            </controls:PivotItem>
+            <controls:PivotItem Header="Настройки">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Text="Количество мин" Grid.Column="0"></TextBlock>
+                    <TextBox InputScope="Number" Name="MinesCountTxt" Grid.Column="1" Width="113" Margin="181,-6,2,55" Height="71" Grid.RowSpan="2"></TextBox>
+                    <Button Name="saveSettingsBtn" Content="Сохранить" Grid.Column="1" Click="saveSettingsBtn_Click" Height="74" Margin="0,50,0,411" Grid.RowSpan="3"></Button>
+                </Grid>
+            </controls:PivotItem>
+            <controls:PivotItem Name="aboutPanel" Header="О приложении" Loaded="aboutPanel_Loaded">
+                <Grid>
+                    <TextBlock Name="aboutTxt"></TextBlock>
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="setFlaggedButton" IconUri="/icons/flag.png" Click="setFlaggedButton_Click" Text="флаг"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>
